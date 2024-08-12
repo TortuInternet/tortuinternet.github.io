@@ -4,13 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    scroll-behavior: smooth;
-}
-
-/* menu-click-function */
-
-
 #sidebar-active {
     display: none;
 }
@@ -19,10 +12,13 @@
     display: flex;
 }
 
-/* whatsapp-floating-styles */
+.shadw {
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+}
 
+/* -------------------------------------WHATSAPP-FLOAT----------------------------------------------------- */
 
-.whatsapp{
+.whatsapp {
     position: fixed;
     width: 60px;
     height: 60px;
@@ -45,9 +41,7 @@
     font-size: 50px;
 }
 
-/* ---------------------------------SECTION CLASSES------------------------------------------ */
-/* --------------------------------- Hero ------------------------------------------ */
-
+/* -------------------------------------------HERO----------------------------------------------------------- */
 
 .hero {
     background: url("../img/bg.png");
@@ -56,50 +50,53 @@
     background-size: cover;
 }
 
-/* --------------------------------- Carrousel ------------------------------------------ */
+/* ------------------------------------------HERO-END---------------------------------------------------------- */
 
-/* SWIPERJS-CUSTOMS */
+/* -----------------------------------------CARROUSEL---------------------------------------------------------- */
 
-
-.swipeConf {
+.swiper {
     width: 100%;
-    height: 450px;
+    height: 385px;
+}
+
+.slide-wrapper{
+    background: rgba(255, 255, 255, 0);
 }
 
 .swiper-slide {
     text-align: center;
     font-size: 18px;
+    background: rgba(255, 255, 255, 0);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .next{
-    color: #24ab15 !important;
-    opacity: .3 !important;
-}
-
-.next:hover{
-    opacity: 1 !important;
+    position: absolute;
+    right: 0%;
+    top: 40%;
 }
 
 .prev{
-    color: #24ab15 !important;
-    opacity: .3 !important;
-}
-
-.prev:hover{
-    opacity: 1 !important;
+    position: absolute;
+    left: 0%;
+    top: 40%;
 }
 
 .swiper-pagination-bullet{
-    background: #24AB15 !important; 
+    background: #24ab15;
 }
 
-/* --------------------------------- Plans ------------------------------------------ */
+/* -----------------------------------------CARROUSEL-END------------------------------------------------------------ */
 
-/* Cards */
+/* ------------------------------------------CARDS-STYLER------------------------------------------------------------ */
 
+.cards {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 
 .card {
     width: 300px;
@@ -113,6 +110,7 @@
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.404) 0px 20px 24px;
 }
+
 
 .card-title {
     background-color: #08520F;
@@ -161,37 +159,9 @@
     color: #24ab15;
 }
 
-.promo{
-    position: relative;
-    z-index: 10;
-    overflow: visible;
-}
+/* -------------------------------------------------CARDS-END-------------------------------------------------------- */
 
-.promo_fix{
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    background: #036994;
-}
-
-.promo::before{
-    background: #24ab15;
-    color: #fff;
-    content: '¡Plan más solicitado!';
-    width: 100%;
-    padding: 5px 0;
-    font-weight: 800;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    position: absolute; 
-    top: -30px;
-    z-index: -10;
-}
-
-/* --------------------------------- Benefit #2 ------------------------------------------ */
-
-
-/* Tortu Tv 1x3 Grid */
-
+/* -------------------------------------------------GRILD-COL-------------------------------------------------------- */
 .square{
     /* box-shadow: rgba(5, 180, 95, 0.423) 0px 20px 24px; */
     /* box-shadow: rgba(5, 180, 95, 0.423) 8px 8px 15px; */
@@ -212,12 +182,7 @@
     box-shadow: rgba(0, 0, 0, 0.278) 5px 5px 28px;
 }
 
-
-/* --------------------------------- Footer ------------------------------------------ */
-
-/* Footer-Instagram-Icon */
-
-
+/* ----------------------------------------------------FOOTER--------------------------------------------------------- */
 .instagram{ width:100px; height:100px;
     background: #f09433; 
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 
 /*
-! tailwindcss v3.4.7 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -689,12 +689,13 @@ video {
   margin-bottom: auto;
 }
 
-.mb-0{
-  margin-bottom: 0px;
+.mx-1{
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
-.mb-10{
-  margin-bottom: 2.5rem;
+.mb-0{
+  margin-bottom: 0px;
 }
 
 .mb-14{
@@ -813,8 +814,8 @@ video {
   height: 100vh;
 }
 
-.h-\[90\%\]{
-  height: 90%;
+.h-\[2px\]{
+  height: 2px;
 }
 
 .h-\[90vh\]{
@@ -834,12 +835,21 @@ video {
   height: min-content;
 }
 
+.h-fit{
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .w-12{
   width: 3rem;
 }
 
 .w-16{
   width: 4rem;
+}
+
+.w-2\/3{
+  width: 66.666667%;
 }
 
 .w-2\/6{
@@ -854,10 +864,6 @@ video {
   width: 100px;
 }
 
-.w-\[290px\]{
-  width: 290px;
-}
-
 .w-\[300px\]{
   width: 300px;
 }
@@ -870,16 +876,24 @@ video {
   width: 85%;
 }
 
-.w-\[95px\]{
-  width: 95px;
-}
-
 .w-\[98\%\]{
   width: 98%;
 }
 
 .w-full{
   width: 100%;
+}
+
+.w-\[80px\]{
+  width: 80px;
+}
+
+.w-\[90px\]{
+  width: 90px;
+}
+
+.w-\[95px\]{
+  width: 95px;
 }
 
 .min-w-full{
@@ -892,14 +906,6 @@ video {
 
 .max-w-screen-xl{
   max-width: 1280px;
-}
-
-.flex-1{
-  flex: 1 1 0%;
-}
-
-.flex-\[2\]{
-  flex: 2;
 }
 
 .flex-shrink-0{
@@ -918,16 +924,12 @@ video {
   flex-direction: column;
 }
 
+.flex-col-reverse{
+  flex-direction: column-reverse;
+}
+
 .flex-wrap{
   flex-wrap: wrap;
-}
-
-.place-content-center{
-  place-content: center;
-}
-
-.place-items-center{
-  place-items: center;
 }
 
 .content-center{
@@ -936,6 +938,10 @@ video {
 
 .items-start{
   align-items: flex-start;
+}
+
+.items-end{
+  align-items: flex-end;
 }
 
 .items-center{
@@ -966,16 +972,16 @@ video {
   gap: 0.25rem;
 }
 
-.gap-3{
-  gap: 0.75rem;
-}
-
-.gap-4{
-  gap: 1rem;
+.gap-2{
+  gap: 0.5rem;
 }
 
 .gap-8{
   gap: 2rem;
+}
+
+.gap-3{
+  gap: 0.75rem;
 }
 
 .gap-x-8{
@@ -1059,6 +1065,29 @@ video {
   border-width: 2px;
 }
 
+.border-b{
+  border-bottom-width: 1px;
+}
+
+.border-red-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(248 113 113 / var(--tw-border-opacity));
+}
+
+.border-red-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(185 28 28 / var(--tw-border-opacity));
+}
+
+.border-blue-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(29 78 216 / var(--tw-border-opacity));
+}
+
+.bg-\[\#0000001c\]{
+  background-color: #0000001c;
+}
+
 .bg-\[\#fff\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1069,9 +1098,19 @@ video {
   background-color: rgb(36 171 21 / var(--tw-bg-opacity));
 }
 
+.bg-negative{
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 4 4 / var(--tw-bg-opacity));
+}
+
 .bg-sec-green{
   --tw-bg-opacity: 1;
   background-color: rgb(8 82 15 / var(--tw-bg-opacity));
+}
+
+.bg-slate-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -1079,8 +1118,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-opacity-15{
-  --tw-bg-opacity: 0.15;
+.bg-opacity-40{
+  --tw-bg-opacity: 0.4;
 }
 
 .p-1{
@@ -1153,14 +1192,14 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-24{
@@ -1171,11 +1210,6 @@ video {
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.py-32{
-  padding-top: 8rem;
-  padding-bottom: 8rem;
 }
 
 .py-4{
@@ -1221,12 +1255,16 @@ video {
   padding-top: 1.5rem;
 }
 
-.pb-10{
-  padding-bottom: 2.5rem;
-}
-
 .text-center{
   text-align: center;
+}
+
+.align-middle{
+  vertical-align: middle;
+}
+
+.align-bottom{
+  vertical-align: bottom;
 }
 
 .font-lato{
@@ -1300,21 +1338,12 @@ video {
   line-height: 1.75rem;
 }
 
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .font-black{
   font-weight: 900;
 }
 
 .font-bold{
   font-weight: 700;
-}
-
-.font-extrabold{
-  font-weight: 800;
 }
 
 .font-light{
@@ -1369,12 +1398,21 @@ video {
   line-height: 50px;
 }
 
+.leading-\[63px\]{
+  line-height: 63px;
+}
+
 .leading-snug{
   line-height: 1.375;
 }
 
 .tracking-tight{
   letter-spacing: -0.025em;
+}
+
+.text-\[\#03210b\]{
+  --tw-text-opacity: 1;
+  color: rgb(3 33 11 / var(--tw-text-opacity));
 }
 
 .text-\[\#24ab1550\]{
@@ -1389,11 +1427,6 @@ video {
 .text-\[\#fff\]{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-accent-green{
-  --tw-text-opacity: 1;
-  color: rgb(36 171 21 / var(--tw-text-opacity));
 }
 
 .text-gray-600{
@@ -1416,20 +1449,8 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.opacity-45{
-  opacity: 0.45;
-}
-
-.opacity-55{
-  opacity: 0.55;
-}
-
-.opacity-90{
-  opacity: 0.9;
-}
-
-.opacity-95{
-  opacity: 0.95;
+.opacity-5{
+  opacity: 0.05;
 }
 
 .shadow{
@@ -1471,13 +1492,28 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.shadow-gray-500{
-  --tw-shadow-color: #6b7280;
+.shadow-green-300{
+  --tw-shadow-color: #86efac;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
 .shadow-negative{
   --tw-shadow-color: #040404;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-gray-400{
+  --tw-shadow-color: #9ca3af;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-gray-600{
+  --tw-shadow-color: #4b5563;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-gray-500{
+  --tw-shadow-color: #6b7280;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -1521,12 +1557,6 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-:root{
-  scroll-behavior: smooth;
-}
-
-/* menu-click-function */
-
 #sidebar-active {
   display: none;
 }
@@ -1535,9 +1565,13 @@ video {
   display: flex;
 }
 
-/* whatsapp-floating-styles */
+.shadw {
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+}
 
-.whatsapp{
+/* -------------------------------------WHATSAPP-FLOAT----------------------------------------------------- */
+
+.whatsapp {
   position: fixed;
   width: 60px;
   height: 60px;
@@ -1561,9 +1595,7 @@ video {
   font-size: 50px;
 }
 
-/* ---------------------------------SECTION CLASSES------------------------------------------ */
-
-/* --------------------------------- Hero ------------------------------------------ */
+/* -------------------------------------------HERO----------------------------------------------------------- */
 
 .hero {
   background: url("../img/bg.png");
@@ -1572,48 +1604,53 @@ video {
   background-size: cover;
 }
 
-/* --------------------------------- Carrousel ------------------------------------------ */
+/* ------------------------------------------HERO-END---------------------------------------------------------- */
 
-/* SWIPERJS-CUSTOMS */
+/* -----------------------------------------CARROUSEL---------------------------------------------------------- */
 
-.swipeConf {
+.swiper {
   width: 100%;
-  height: 450px;
+  height: 385px;
+}
+
+.slide-wrapper{
+  background: rgba(255, 255, 255, 0);
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
+  background: rgba(255, 255, 255, 0);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .next{
-  color: #24ab15 !important;
-  opacity: .3 !important;
-}
-
-.next:hover{
-  opacity: 1 !important;
+  position: absolute;
+  right: 0%;
+  top: 40%;
 }
 
 .prev{
-  color: #24ab15 !important;
-  opacity: .3 !important;
-}
-
-.prev:hover{
-  opacity: 1 !important;
+  position: absolute;
+  left: 0%;
+  top: 40%;
 }
 
 .swiper-pagination-bullet{
-  background: #24AB15 !important;
+  background: #24ab15;
 }
 
-/* --------------------------------- Plans ------------------------------------------ */
+/* -----------------------------------------CARROUSEL-END------------------------------------------------------------ */
 
-/* Cards */
+/* ------------------------------------------CARDS-STYLER------------------------------------------------------------ */
+
+.cards {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
 
 .card {
   width: 300px;
@@ -1675,35 +1712,9 @@ video {
   color: #24ab15;
 }
 
-.promo{
-  position: relative;
-  z-index: 10;
-  overflow: visible;
-}
+/* -------------------------------------------------CARDS-END-------------------------------------------------------- */
 
-.promo_fix{
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  background: #036994;
-}
-
-.promo::before{
-  background: #24ab15;
-  color: #fff;
-  content: '¡Plan más solicitado!';
-  width: 100%;
-  padding: 5px 0;
-  font-weight: 800;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  position: absolute;
-  top: -30px;
-  z-index: -10;
-}
-
-/* --------------------------------- Benefit #2 ------------------------------------------ */
-
-/* Tortu Tv 1x3 Grid */
+/* -------------------------------------------------GRILD-COL-------------------------------------------------------- */
 
 .square{
   /* box-shadow: rgba(5, 180, 95, 0.423) 0px 20px 24px; */
@@ -1725,9 +1736,7 @@ video {
   box-shadow: rgba(0, 0, 0, 0.278) 5px 5px 28px;
 }
 
-/* --------------------------------- Footer ------------------------------------------ */
-
-/* Footer-Instagram-Icon */
+/* ----------------------------------------------------FOOTER--------------------------------------------------------- */
 
 .instagram{
   width:100px;
@@ -1762,14 +1771,19 @@ video {
   background-color: rgb(8 82 15 / var(--tw-bg-opacity));
 }
 
-.hover\:text-lg:hover{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .hover\:text-accent-green:hover{
   --tw-text-opacity: 1;
   color: rgb(36 171 21 / var(--tw-text-opacity));
+}
+
+.hover\:text-blue-400:hover{
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity));
+}
+
+.hover\:text-pink-600:hover{
+  --tw-text-opacity: 1;
+  color: rgb(219 39 119 / var(--tw-text-opacity));
 }
 
 .hover\:text-sec-green:hover{
@@ -1780,6 +1794,10 @@ video {
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-opacity-75:hover{
+  --tw-text-opacity: 0.75;
 }
 
 .hover\:underline:hover{
@@ -1798,17 +1816,6 @@ video {
   outline-width: 1px;
 }
 
-.hover\:transition-opacity:hover{
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.active\:bg-accent-green:active{
-  --tw-bg-opacity: 1;
-  background-color: rgb(36 171 21 / var(--tw-bg-opacity));
-}
-
 @media (min-width: 640px){
   .sm\:inline{
     display: inline;
@@ -1816,10 +1823,6 @@ video {
 
   .sm\:hidden{
     display: none;
-  }
-
-  .sm\:p-0{
-    padding: 0px;
   }
 
   .sm\:py-10{
@@ -1837,59 +1840,33 @@ video {
 }
 
 @media (min-width: 768px){
-  .md\:my-20{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
-
-  .md\:my-auto{
-    margin-top: auto;
-    margin-bottom: auto;
+  .md\:mb-2{
+    margin-bottom: 0.5rem;
   }
 
   .md\:ms-12{
     margin-inline-start: 3rem;
   }
 
-  .md\:ms-2{
-    margin-inline-start: 0.5rem;
-  }
-
   .md\:flex{
     display: flex;
-  }
-
-  .md\:w-full{
-    width: 100%;
-  }
-
-  .md\:flex-\[2\]{
-    flex: 2;
   }
 
   .md\:flex-row{
     flex-direction: row;
   }
 
-  .md\:flex-row-reverse{
-    flex-direction: row-reverse;
-  }
-
   .md\:justify-center{
     justify-content: center;
-  }
-
-  .md\:p-0{
-    padding: 0px;
   }
 
   .md\:p-8{
     padding: 2rem;
   }
 
-  .md\:px-4{
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .md\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .md\:ps-20{
@@ -1918,6 +1895,10 @@ video {
     display: block;
   }
 
+  .lg\:flex{
+    display: flex;
+  }
+
   .lg\:inline-flex{
     display: inline-flex;
   }
@@ -1930,10 +1911,6 @@ video {
     display: none;
   }
 
-  .lg\:w-\[36px\]{
-    width: 36px;
-  }
-
   .lg\:w-\[50\%\]{
     width: 50%;
   }
@@ -1942,12 +1919,8 @@ video {
     width: 100%;
   }
 
-  .lg\:flex-1{
-    flex: 1 1 0%;
-  }
-
-  .lg\:flex-\[3\]{
-    flex: 3;
+  .lg\:w-\[36px\]{
+    width: 36px;
   }
 
   .lg\:grid-flow-row-dense{
@@ -1994,6 +1967,11 @@ video {
   .lg\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .lg\:px-8{

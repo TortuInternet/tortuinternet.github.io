@@ -1,7 +1,7 @@
-/** @type {import('tailwindcss').Config} */
-
+/*** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    
     "./src/**/*.{html,js}",
     "./index.html"
   ],
@@ -12,13 +12,13 @@ module.exports = {
         'lato': ['"Lato"','sans-serif']
       },
       colors:{
+        'light-green':'#E4F3CE',
         'accent-green':'#24AB15',
         'sec-green':'#08520F',
-        'light-green':'#E4F3CE',
-        'negative':'#040404',
-        'positive': '#f3f3f3'
+        'negative':'#040404'
       }
     },
   },
   plugins: [],
 }
+

@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    scroll-behavior: smooth;
+}
+
+/* menu-click-function */
+
+
+#sidebar-active {
+    display: none;
+}
+
+#sidebar-active:checked ~ .links-container {
+    display: flex;
+}
+
+/* whatsapp-floating-styles */
+
+
+.whatsapp{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px; /*!*/
+    right: 20px;
+    background-color: #24ab15;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 800;
+}
+
+.whatsapp:hover {
+    transition: 0.75s ease-out;
+}
+
+.whatsapp-icon {
+    margin-top: 4px;
+    font-size: 50px;
+}
+
+/* ---------------------------------SECTION CLASSES------------------------------------------ */
+/* --------------------------------- Hero ------------------------------------------ */
+
+
+.hero {
+    background: url("../img/bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* --------------------------------- Carrousel ------------------------------------------ */
+
+/* SWIPERJS-CUSTOMS */
+
+
+.swipeConf {
+    width: 100%;
+    height: 450px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next{
+    color: #24ab15 !important;
+    opacity: .3 !important;
+}
+
+.next:hover{
+    opacity: 1 !important;
+}
+
+.prev{
+    color: #24ab15 !important;
+    opacity: .3 !important;
+}
+
+.prev:hover{
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet{
+    background: #24AB15 !important; 
+}
+
+/* --------------------------------- Plans ------------------------------------------ */
+
+/* Cards */
+
+
+.card {
+    width: 300px;
+    height: 310px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.404) 0px 20px 24px;
+}
+
+.card-title {
+    background-color: #08520F;
+    color: #ffffff;
+    text-align: center;
+    line-height: 0.9;
+    padding: 1rem 0;
+    box-shadow: rgba(0, 0, 0, 0.057) 0px 20px 24px;
+}
+
+.card-line {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    margin-inline: 12px;
+    line-height: 12px ;
+    text-transform: capitalize;
+    font-family: 'Lato', sans-serif;
+}
+
+.card-button {
+    height: 2rem;
+    margin: 0 10px 10px 10px;
+    font-weight: 700;
+    font-size: medium;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid transparent;
+    background: #08520F;
+    border-radius: 3px;
+    /* transition: all 0.75s ease-out ; */
+}
+
+.card-button:hover{
+    background: #E4F3CE;
+    outline: #24ab15 1px solid;
+    color: #24ab15;
+}
+
+.card-button:active{
+    background: #24ab15;
+    color: #fff;
+}
+
+.check {
+    color: #24ab15;
+}
+
+.promo{
+    position: relative;
+    z-index: 10;
+    overflow: visible;
+}
+
+.promo_fix{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: #036994;
+}
+
+.promo::before{
+    background: #24ab15;
+    color: #fff;
+    content: '¡Plan más solicitado!';
+    width: 100%;
+    padding: 5px 0;
+    font-weight: 800;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: absolute; 
+    top: -30px;
+    z-index: -10;
+}
+
+/* --------------------------------- Benefit #2 ------------------------------------------ */
+
+
+/* Tortu Tv 1x3 Grid */
+
+.square{
+    /* box-shadow: rgba(5, 180, 95, 0.423) 0px 20px 24px; */
+    /* box-shadow: rgba(5, 180, 95, 0.423) 8px 8px 15px; */
+    background: #08520F;
+}
+
+.left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.tortu-btn {
+    box-shadow: rgba(0, 0, 0, 0.278) 5px 5px 28px;
+}
+
+
+/* --------------------------------- Footer ------------------------------------------ */
+
+/* Footer-Instagram-Icon */
+
+
+.instagram{ width:100px; height:100px;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    }

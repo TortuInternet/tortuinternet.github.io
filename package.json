@@ -1,0 +1,14 @@
+{
+  "name": "tortuinternet",
+  "version": "1.0.0",
+  "description": "tortu-internet-service-website",
+  "main": "index.html",
+  "scripts": {
+    "test": "npx tailwindcss -i ./src/style/input.css -o ./src/style/output.css --watch"
+  },
+  "author": "00ivanfarias",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
+  }
+}

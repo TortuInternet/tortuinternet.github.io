@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MNWWJN7');
-    </script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DXWB5CRY2J"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-DXWB5CRY2J');
-        </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ----------------------------------- favicon --------------------------------- -->
-    <link rel="icon" type="image/png" sizes="16x16"  href="./src/img/favicon/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <!-- ----------------------------------- box-icons --------------------------------- -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- ------------------------------------------------------------------------------- -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <!-- ---favicon--- -->
+    <link rel="icon" type="image/png" sizes="16x16"  href="./src/img/favicon/favicon-16x16.png">    
+    <!-- ---- css ---- -->
     <link rel="stylesheet" href="./src/style/output.css">
-    <title>TortuInternet</title>
+    <!-- --box-icons-- -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CDN - Swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- -----SEO----- -->
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MNWWJN7');
+        </script>
+        <!-- End Google Tag Manager -->
+
+        <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-DXWB5CRY2J"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-DXWB5CRY2J');
+            </script>
+        <!-- End Google tag (gtag.js) -->
+
+        <!-- Meta Pixel Code -->
+            <script>
+                !function(f,b,e,v,n,t,s)
+                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '3136531433256656');
+                fbq('track', 'PageView');
+            </script>
+            <noscript>
+                <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3136531433256656&ev=PageView&noscript=1"/>
+            </noscript>
+        <!-- End Meta Pixel Code -->
+    <title>tortuInternet</title>
 </head>
 
 <!-- -- Google tag (gtag.js)-- -->
@@ -48,21 +64,22 @@
 </script>
 <!-- ------------------------- -->
 
-<body class="bg-white font-redHat">
+<body class="font-redHat">
 
     <!-- Google Tag Manager (noscript) -->
-        <noscript>
-            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNWWJN7"
-            height="0" width="0" style="display:none;visibility:hidden">
-            </iframe>
-        </noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNWWJN7"
+        height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Header Start -->
     <header class="fixed w-[98%] h-14 top-[1%] left-[1%] z-50 shadow-negative shadow-2xl">
-
+        
+        <!-- logo-block -->
         <div>
-            <a href="#" class="hidden sm:inline w-16 ml-4 absolute z-[5] top-4 text-negative text-2xl font-bold hover:text-sec-green transition-all">
+            <a href="#" class="hidden sm:inline w-16 ml-4 absolute z-[5] top-4 text-negative text-xl font-bold hover:text-sec-green transition-all">
                 tortu<span class="bg-accent-green hover:bg-sec-green text-white transition-all ml-[2px] px-2 py-1 font-lato ">Internet</span>
             </a>
 
@@ -70,7 +87,8 @@
                 <img class="sm:hidden inline w-12 ml-4 absolute z-50 top-2 rounded-full " src="./src/img/logo/tortuinternet_logo.png" alt="TortuInternet Logo">
             </a>
         </div>
-
+        <div class="hidden"></div>
+        <!-- links-block -->
         <nav class="h-16 bg-white flex items-center justify-end relative rounded-md">
 
             <input type="checkbox" id="sidebar-active">
@@ -79,30 +97,35 @@
                 <i class='bx bx-menu font-medium text-negative text-3xl'></i>
             </label>
 
-            <!-- links-desktop -->
+            <!-- links-wrapper-desktop -->
             <div class="hidden absolute right-4 w-[85%] h-full md:flex items-center justify-end "> 
 
-                
-                <a class="font-bold text-negative hover:text-accent-green hover:bg-light-green py-3 md:px-8 lg:px-12 rounded-md transition-all" href="#plans" >Planes</a>
-                <a class="font-bold text-negative hover:text-accent-green hover:bg-light-green py-3 md:px-8 lg:px-12 rounded-md transition-all" href="#tortutv" >TortuTV</a>
-                <a class="font-bold text-negative hover:text-accent-green hover:bg-light-green py-3 md:px-8 lg:px-12 rounded-md transition-all" href="#apps" >Acceso Apps TV</a>
-                
-                <a class="font-bold font-lato text-white bg-accent-green hover:text-accent-green hover:bg-light-green hover:outline hover:outline-1 py-3 px-5 ms-8 rounded-md transition-all" href="https://api.whatsapp.com/send?phone=5491163987663&text=Hola,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20planes." >Contactanos</a>
+                <!-- Links -->
+                <a class="font-bold text-xs text-negative hover:text-accent-green hover:bg-light-green py-3 md:px-4 lg:px-8 rounded-md transition-all" href="#plans" >Planes</a>
+                <a class="font-bold text-xs text-negative hover:text-accent-green hover:bg-light-green py-3 md:px-4 lg:px-8 rounded-md transition-all" href="#tortutv" >Beneficios</a>
+                <a class="font-bold text-xs text-negative hover:text-accent-green hover:bg-light-green py-3 md:px-4 lg:px-8 rounded-md transition-all" href="#apps" >Acceso Apps TV</a>
+                <a class="font-bold text-xs text-negative hover:text-accent-green hover:bg-light-green py-3 md:px-4 lg:px-8 rounded-md transition-all" href="https://forms.gle/bnAoxSVbg1dyfFvk8" >Trabaja Con Nosotros</a>
+
+                <!-- Contact -->
+                <a class="font-bold font-lato text-white bg-accent-green hover:text-accent-green hover:bg-light-green hover:outline hover:outline-1 py-3 px-5 ms-8 md:ms-2 rounded-md transition-all" href="https://api.whatsapp.com/send?phone=5491163987663&text=Hola,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20planes." >Contactanos</a>
             
             </div>
 
-            <!-- links-mob -->
+            <!-- links-wrapper-mob -->
             <div class="links-container hidden bg-white flex-col items-start fixed top-[7px] right-1 z-50 w-[300px] h-[100vh] rounded-r-md shadw"> 
 
+                <!-- menu-click-function  -->
                 <label for="sidebar-active" class="block px-5">
                     <i class='bx bx-x font-medium text-negative text-3xl my-[14px]'></i>
                 </label>
 
-                <!-- links -->
-                <a class="font-bold text-negative hover:text-white hover:bg-accent-green box-border h-auto w-full px-7 py-8 justify-start" href="#plans" >Planes</a>
-                <a class="font-bold text-negative hover:text-white hover:bg-accent-green box-border h-auto w-full px-7 py-8 justify-start" href="#tortutv" >TortuTV</a>
-                <a class="font-bold text-negative hover:text-white hover:bg-accent-green box-border h-auto w-full px-7 py-8 justify-start" href="#apps" >Acceso Apps TV</a>
-                <!-- CTA -->
+                <!-- Links -->
+                <a class="font-bold text-negative hover:text-white active:bg-accent-green hover:bg-accent-green box-border h-auto w-full px-7 py-8 justify-start" href="#plans" >Planes</a>
+                <a class="font-bold text-negative hover:text-white active:bg-accent-green hover:bg-accent-green box-border h-auto w-full px-7 py-8 justify-start" href="#tortutv" >Beneficios</a>
+                <a class="font-bold text-negative hover:text-white active:bg-accent-green hover:bg-accent-green box-border h-auto w-full px-7 py-8 justify-start" href="#apps" >Acceso Apps TV</a>
+                <a class="font-bold text-negative hover:text-white active:bg-accent-green hover:bg-accent-green box-border h-auto w-full px-7 py-8 justify-start" href="https://forms.gle/bnAoxSVbg1dyfFvk8" >Trabaja Con Nosotros</a>
+                
+                <!-- Contact -->
                 <a class="font-bold font-lato text-white hover:text-accent-green hover:bg-light-green hover:outline hover:outline-1 box-border h-auto w-5/6 px-7 py-4 text-center mx-auto mt-10 bg-accent-green rounded-md" href="https://api.whatsapp.com/send?phone=5491163987663&text=Hola,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20planes." >Contactanos</a>
                 
             </div>
@@ -111,31 +134,30 @@
         
     </header>
     <!-- Header End -->
-    
+
     <!-- WhatsApp Float -->
     <a href="https://api.whatsapp.com/send?phone=5491163987663&text=Hola,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20planes." class="whatsapp hover:animate-pulse" target="_blank">
         <i class='bx bxl-whatsapp whatsapp-icon'></i> 
     </a>
-    
-    <!-- Section: Hero Start -->
-    <section class="hero bg-slate-700 h-[90vh] grid grid-cols-1 lg:grid-cols-2 p-4 lg:pt-[5rem] gap-0 lg:gap-4" id="land">
+    <!-- WhatsApp Float -->
 
+    <!-- Hero-Section-Start -->
+    <section class="hero bg-sec-green h-[90vh] grid grid-cols-1 lg:grid-cols-2 p-4 lg:pt-[5rem] gap-0 lg:gap-4" id="land">
+
+        <!-- Greeter-box -->
         <div class="flex flex-col justify-end md:justify-center text-center lg:text-start mb-0 md:ps-20">
-
             <h1 class="text-5xl text-white font-black font-redHat capitalize lg:text-start mb-2 leading-snug">Internet fibra óptica hasta 300 MEGAS!</h1>
-            
-            <h2 class="text-white font-semibold text-3xl mb-6"> + <a class="text-white font-semibold font-lato bg-accent-green px-4 py-1 cursor-pointer" href="#tortutv">TortuTv</a> online </h2>
-            
+            <h2 class="text-white font-semibold text-3xl mb-6"> + <a class="text-white font-semibold font-lato bg-accent-green px-4 py-1 cursor-pointer" href="#tortutv">App de Tv</a> online </h2>
             <h3 class="text-white font-lato font-light text-xl">Es todo lo que estabas buscando</h3>
-            
         </div>
 
+        <!-- Newsletter-box -->
         <div class="lg:px-10 lg:pb-16 content-center">
 
             <div class="space-y-2 text-sm pt-0 lg:flex-row">
                 
                 <p class="text-base font-redHat font-bold text-center text-white">
-                    Suscribete para recibir promociones!
+                    ¡Suscribite para recibir promociones!
                 </p>
                 
                 <form action="https://formsubmit.co/tortuinternet.facturacion@gmail.com" method="POST" class=" px-8">
@@ -143,20 +165,19 @@
                     <div class="relative">
                         <input type="email" name="email" placeholder="Ingrése su email aqui..." class="w-full py-2 ps-4 rounded-md"/>
                         <button class=" bg-accent-green py-1 px-3 absolute right-1 top-1 rounded-md font-bold font-lato text-white hover:text-accent-green hover:bg-light-green hover:outline hover:outline-1 " type="submit" value="email">
-                            Subscribete!
+                            Subscribirse
                         </button>
                     </div>
                     
                 </form>
             </div>
         </div>
-        
-    
-    </section>
-    <!-- Section: Hero End -->
 
-    <!-- Section: Plans Start -->
-    <section class="m-auto py-4 pt-20" id="plans">
+    </section>
+    <!-- Hero-Section-End -->
+
+    <!-- Section-Plans-Start -->
+    <section class="m-auto py-4 pt-20 " id="plans">
 
         <div class="flex flex-wrap flex-col md:flex-row items-center text-center md:text-start">
         
@@ -168,297 +189,182 @@
             </p>
 
             <div>
-                <p class="text-[#717F87] text-base leading-[27px] font-lato font-medium mb-8 md:mb-2 md:ms-12">
+                <p class="text-[#717F87] text-base leading-[27px] font-lato font-medium mb-8 md:ms-12">
                     ¡Encontrá el plan perfecto para vos!
                 </p>
             </div>
 
-<!-- ----------------------------------------------------------------CARROUSEL-MOB------------------------------------------------------------------------------ -->
-
-            <div class="swiper mobSwiper flex lg:hidden">
-                <!-- cards -->
+            <!-- ----------------------------------- CARROUSEL ---------------------------------------------- -->
+            <!-- Slider main container -->
+            <div class="swiper swipeConf mySwiper">
+                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                    <!-- card-1 -->
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card-title">
-                                <p class="font-bold capitalize">internet fibra optica</p>
-                                <h4 class="text-2xl font-bold uppercase">300 megas</h4>
-                            </div>
-                        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm"><strong>instalación sin costo</strong></p>
-                            </div>
-                        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">modem wifi en modalidad comodato</p>
-                            </div>
-                        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">velocidad simetrica</p>
-                            </div>
-                        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">Acceso a <strong>TortuTv</strong> sin costo</p>
-                            </div>
-                        
-                            <button class="card-button"><a href="https://wa.link/qyhxkw" target="_blank">contratar plan</a></button>
-                        </div>
-                    </div>
-                    <!-- card-1-end -->
-                
-                    <!-- card-2 -->
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card-title">
-                                <p class="font-bold capitalize">internet fibra optica</p>
-                                <h4 class="text-2xl font-bold uppercase">100 megas</h4>
-                            </div>
-                        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm"><strong>instalación sin costo</strong></p>
-                            </div>
-                        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">modem wifi en modalidad comodato</p>
-                            </div>
-                        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">velocidad simetrica</p>
-                            </div>
-                        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">Acceso a <strong>TortuTv</strong> sin costo</p>
-                            </div>
-                        
-                            <button class="card-button"><a href="https://wa.link/cnhawf" target="_blank">contratar plan</a></button>
-                        </div>
-                    </div>
-                    <!-- card-2-end -->
-                
-                    <!-- card-3 -->
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card-title">
-                                <p class="font-bold capitalize">internet fibra optica</p>
-                                <h4 class="text-2xl font-bold uppercase">50 megas</h4>
-                            </div>
-                        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">modem wifi en modalidad comodato</p>
-                            </div>
-                        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">velocidad simetrica</p>
-                            </div>
-                        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">Acceso a <strong>TortuTv</strong> sin costo</p>
-                            </div>
-                        
-                            <button class="card-button"><a href="https://wa.link/s45qra" target="_blank">contratar plan</a></button>
-                        </div>
-                    </div>
-                    <!-- card-3-end -->
-                
-                    <!-- card-4 -->
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card-title">
-                                <p class="font-bold capitalize">internet por aire</p>
-                                <h4 class="text-2xl font-bold uppercase">20 megas</h4>
-                            </div>
-                        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">modem wifi en modalidad comodato</p>
-                            </div>
-                        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">velocidad simetrica</p>
-                            </div>
-                        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">Acceso a <strong>TortuTv</strong> sin costo</p>
-                            </div>
-                        
-                            <button class="card-button"><a href="https://wa.link/5jgyhx" target="_blank">contratar plan</a></button>
-                        </div>
-                    </div>
-                    <!-- card-4-end -->
-                
-                </div>
-                <!-- card-end -->
+                    <!-- Slides -->
+
+                    <!-- Card-1 -->
+                    <div class="swiper-slide grid place-content-center ">
+                        <div class="w-[290px] md:w-full h-[90%] grid place-items-center mx-auto md:my-auto">
+                            <!-- Content -->
+                            <div class="card promo">
+                                <div class="card-title promo_fix">
+                                    <p class="font-bold capitalize">internet fibra optica</p>
+                                    <h4 class="text-2xl font-bold uppercase">300 megas</h4>
+                                </div>
             
-                <div class="swiper-button-next next hover:opacity-100 text-[#24ab1550] hover:text-accent-green p-8 "></div>
-                <div class="swiper-button-prev prev hover:opacity-100 text-[#24ab1550] hover:text-accent-green p-8 "></div>
-                <div class="swiper-pagination circle"></div>
+                                <div class="card-line">
+                                    <i class="bx bxs-badge-check check"></i>
+                                    <p class="text-sm"><strong>instalación sin costo</strong></p>
+                                </div>
             
-            </div>
-
-<!-- --------------------------------------------------------------CARROUSEL-MOB-END----------------------------------------------------------------------------- -->
-
-<!-- ----------------------------------------------------------------CARROUSEL-DESK------------------------------------------------------------------------------ -->
-
-            <div class="swiper deskSwiper hidden lg:flex mx-auto">
-                <!-- cards -->
-                <div class="swiper-wrapper">
-                    <!-- card-1 -->
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card-title">
-                                <p class="font-bold capitalize">internet fibra optica</p>
-                                <h4 class="text-2xl font-bold uppercase">300 megas</h4>
+                                <div class="card-line">
+                                    <i class="bx bxs-badge-check check"></i>
+                                    <p class="text-sm">modem wifi en modalidad comodato</p>
+                                </div>
+            
+                                <div class="card-line">
+                                    <i class="bx bxs-badge-check check"></i>
+                                    <p class="text-sm">velocidad simetrica</p>
+                                </div>
+            
+                                <div class="card-line">
+                                    <i class="bx bxs-badge-check check"></i>
+                                    <p class="text-sm">Acceso a <strong>beneficios exclusivos</strong> sin costo</p>
+                                </div>
+            
+                                <button class="card-button"><a href="https://wa.link/qyhxkw" target="_blank">contratar plan</a></button>
                             </div>
-        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm"><strong>instalación sin costo</strong></p>
-                            </div>
-        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">modem wifi en modalidad comodato</p>
-                            </div>
-        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">velocidad simetrica</p>
-                            </div>
-        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">Acceso a <strong>TortuTv</strong> sin costo</p>
-                            </div>
-        
-                            <button class="card-button"><a href="https://wa.link/qyhxkw" target="_blank">contratar plan</a></button>
                         </div>
                     </div>
-                    <!-- card-1-end -->
+                    <!-- Card-2 -->
+                    <div class="swiper-slide grid place-content-center ">
+                        <div class="w-[290px] md:w-full h-[90%] grid place-items-center m-auto md:my-auto">
+                            <!-- Content -->
+                            <div class="card">
+                                <div class="card-title">
+                                    <p class="font-bold capitalize">internet fibra optica</p>
+                                    <h4 class="text-2xl font-bold uppercase">100 megas</h4>
+                                </div>
 
-                    <!-- card-2 -->
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card-title">
-                                <p class="font-bold capitalize">internet fibra optica</p>
-                                <h4 class="text-2xl font-bold uppercase">100 megas</h4>
+                                <div class="card-line">
+                                    <i class="bx bxs-badge-check check"></i>
+                                    <p class="text-sm"><strong>50% descuento en costo de instalación</strong></p>
+                                </div>
+            
+                                <div class="card-line">
+                                    <i class="bx bxs-badge-check check"></i>
+                                    <p class="text-sm">modem wifi en modalidad comodato</p>
+                                </div>
+            
+                                <div class="card-line">
+                                    <i class="bx bxs-badge-check check"></i>
+                                    <p class="text-sm">velocidad simetrica</p>
+                                </div>
+            
+                                <div class="card-line">
+                                    <i class="bx bxs-badge-check check"></i>
+                                    <p class="text-sm">Acceso a <strong>beneficios exclusivos</strong> sin costo</p>
+                                </div>
+            
+                                <button class="card-button"><a href="https://wa.link/cnhawf" target="_blank">contratar plan</a></button>
                             </div>
-        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm"><strong>instalación sin costo</strong></p>
-                            </div>
-        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">modem wifi en modalidad comodato</p>
-                            </div>
-        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">velocidad simetrica</p>
-                            </div>
-        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">Acceso a <strong>TortuTv</strong> sin costo</p>
-                            </div>
-        
-                            <button class="card-button"><a href="https://wa.link/cnhawf" target="_blank">contratar plan</a></button>
                         </div>
                     </div>
-                    <!-- card-2-end -->
+                    <!-- Card-3 -->
+                    <div class="swiper-slide grid place-content-center ">
+                        <div class="w-[290px] md:w-full h-[90%] grid place-items-center m-auto md:my-auto">
+                            <!-- Content -->
+                            <div class="card">
+                                <div class="card-title">
+                                    <p class="font-bold capitalize">internet fibra optica</p>
+                                    <h4 class="text-2xl font-bold uppercase">50 megas</h4>
+                                </div>
+    
+                                <div class="card-line">
+                                    <i class="bx bxs-badge-check check"></i>
+                                    <p class="text-sm"><strong>25% descuento en costo de instalación</strong></p>
+                                </div>
 
-                    <!-- card-3 -->
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card-title">
-                                <p class="font-bold capitalize">internet fibra optica</p>
-                                <h4 class="text-2xl font-bold uppercase">50 megas</h4>
+                                <div class="card-line">
+                                    <i class="bx bxs-badge-check check"></i>
+                                    <p class="text-sm">modem wifi en modalidad comodato</p>
+                                </div>
+            
+                                <div class="card-line">
+                                    <i class="bx bxs-badge-check check"></i>
+                                    <p class="text-sm">velocidad simetrica</p>
+                                </div>
+            
+                                <div class="card-line">
+                                    <i class="bx bxs-badge-check check"></i>
+                                    <p class="text-sm">Acceso a <strong>beneficios exclusivos</strong> sin costo</p>
+                                </div>
+            
+                                <button class="card-button"><a href="https://wa.link/s45qra" target="_blank">contratar plan</a></button>
                             </div>
-
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">modem wifi en modalidad comodato</p>
-                            </div>
-        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">velocidad simetrica</p>
-                            </div>
-        
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">Acceso a <strong>TortuTv</strong> sin costo</p>
-                            </div>
-        
-                            <button class="card-button"><a href="https://wa.link/s45qra" target="_blank">contratar plan</a></button>
                         </div>
                     </div>
-                    <!-- card-3-end -->
-
-                    <!-- card-4 -->
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card-title">
-                                <p class="font-bold capitalize">internet por aire</p>
-                                <h4 class="text-2xl font-bold uppercase">20 megas</h4>
+                    <!-- Card-4 -->
+                    <div class="swiper-slide grid place-content-center ">
+                        <div class="w-[290px] md:w-full h-[90%] grid place-items-center m-auto md:my-auto">
+                            <!-- Content -->
+                            <div class="card">
+                                <div class="card-title">
+                                    <p class="font-bold capitalize">internet por aire</p>
+                                    <h4 class="text-2xl font-bold uppercase">20 megas</h4>
+                                </div>
+    
+                                <div class="card-line">
+                                    <i class="bx bxs-badge-check check"></i>
+                                    <p class="text-sm">modem wifi en modalidad comodato</p>
+                                </div>
+    
+                                <div class="card-line">
+                                    <i class="bx bxs-badge-check check"></i>
+                                    <p class="text-sm">velocidad simetrica</p>
+                                </div>
+    
+                                <div class="card-line">
+                                    <i class="bx bxs-badge-check check"></i>
+                                    <p class="text-sm">Acceso a <strong>beneficios exclusivos</strong> sin costo</p>
+                                </div>
+    
+                                <button class="card-button"><a href="https://wa.link/5jgyhx" target="_blank">contratar plan</a></button>
                             </div>
-
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">modem wifi en modalidad comodato</p>
-                            </div>
-
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">velocidad simetrica</p>
-                            </div>
-
-                            <div class="card-line">
-                                <i class="bx bxs-badge-check check"></i>
-                                <p class="text-sm">Acceso a <strong>TortuTv</strong> sin costo</p>
-                            </div>
-
-                            <button class="card-button"><a href="https://wa.link/5jgyhx" target="_blank">contratar plan</a></button>
                         </div>
                     </div>
-                    <!-- card-4-end -->
-
                 </div>
-                <!-- card-end -->
+
+                <div class="swiper-pagination"></div>
 
                 <div class="swiper-button-next next hover:opacity-100 text-[#24ab1550] hover:text-accent-green p-8 "></div>
                 <div class="swiper-button-prev prev hover:opacity-100 text-[#24ab1550] hover:text-accent-green p-8 "></div>
-                <div class="swiper-pagination circle"></div>
+
+            
+            </div>
+            <!-- ----------------------------------- CARROUSEL ---------------------------------------------- -->
+
+            <div class="grid place-items-center p-8 md:p-0">
+
+                    <dl class=" text-center md:text-start text-sm text-[#717F87] mx-auto">
+
+                        <dt class="font-extrabold opacity-95">Las velocidades obtenidas mediante WiFi pueden fluctuar por diversos factores, como:</dt>
+                            <dd class="ms-8 opacity-90">   - Distancia hasta el dispositivo</dd>
+                            <dd class="ms-8 opacity-90">   - Interferencias inalámbricas (microondas, teléfonos inalámbricos, otras señales WiFi, etc.)</dd>
+                            <dd class="ms-8 opacity-90">   - Uso simultáneo de varios dispositivos</dd>
+                            <dd class="ms-8 opacity-90">   - Repetidores WiFi y/o routers instalados de forma particular</dd>
+                            <dd class="ms-8 opacity-90">   - Tipos de dispositivos conectados, de los que la empresa no se responsabiliza</dd>
+
+                    </dl>
 
             </div>
-
-<!-- ----------------------------------------------------------------CARROUSEL-DESK-END--------------------------------------------------------------------------- -->
 
     </section>
-    <!-- Section: Plans End -->
+    <!-- Section-Plans-End -->
 
-    <hr class="w-2/3 mx-auto bg-negative opacity-5 h-[2px] mb-6">
-
-    <!-- section: Benefits Start-->
-
-    <section class="container mx-auto text-center mb-0 pt-24 px-12">
+    <!-- Section-Benefits-Start-->
+    <section class="container mx-auto text-center mb-0 md:my-20 pt-24 px-12 py-32">
         <h2 class="text-[40px] font-bold leading-[1.5] text-center text-negative">
-            ¡ Beneficios con Tortuinternet <span class="bg-accent-green text-white p-2 me-1 font-lato font-bold shadow-[#00000067] shadow-lg">Fibra Óptica</span>!
+            ¡ Beneficios con Tortuinternet <br class=" md:flex lg:hidden"> <span class="bg-accent-green text-white p-2 me-1 font-lato font-bold shadow-[#00000067] shadow-lg">Fibra Óptica</span>!
         </h2>
         
         <div class="bg-white py-24 sm:py-10">
@@ -485,15 +391,11 @@
                 </dl>
             </div>
     </section>
+    <!-- Section-Benefits-End-->
 
-    <!-- section: Benefits End-->
-
-    <hr class="w-2/3 mx-auto bg-negative opacity-5 h-[2px] mb-6">
-
-    <!-- section: TortuTV Start-->
-
-    <section class="bg-white border-b py-20" id="tortutv">
-        
+    <!-- Section-TortuTV-Start-->
+    <section class="py-16 grid place-content-center" id="tortutv">
+    
         <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
             <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-12 lg:items-center">
                 <div class="min-w-full">
@@ -503,7 +405,7 @@
                                 <div class="flex-shrink-0"></div>
                                 <div class="ml-0">
                                     <h5 class="mt-2 text-[30px] font-semibold leading-10 text-negative text-center lg:text-start">
-                                        Sumale a tu plan <br class="lg:hidden"> de internet <span class="bg-accent-green p-2 text-white font-lato shadow-[#00000067] shadow-lg" >TORTU<strong>TV</strong></span><br class="lg:hidden"> con películas, series y <strong>+300 canales</strong> de <strong>Televisión online!</strong>
+                                        Sumale a tu plan <br class="lg:hidden"> de internet <span class=" text-accent-green font-lato ">este beneficio exclusivo</span><br class="lg:hidden"> con películas, series y <strong>+300 canales</strong> de <strong>Televisión online!</strong>
                                     </h5>
                                 </div>
                             </div>
@@ -532,7 +434,7 @@
                         <div class="mt-12 rounded-md shadow hidden lg:inline-flex">
                             <a href="https://wa.link/emediy">
                             <button type="button" class="py-4 px-6  bg-accent-green hover:bg-light-green outline outline-1 outline-accent-green text-white hover:text-accent-green w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md rounded-md text-[15px] leading-[10px]">
-                                    Sumar TortuTV a mi plan de internet
+                                    Sumar beneficio a mi plan de internet
                                 </button>
                             </a>
                         </div>
@@ -544,18 +446,17 @@
 
                 <div class="my-12 content-center flex rounded-md justify-center mx-auto shadow lg:hidden">
                     <button type="button" href="https://wa.link/emediy" class="py-4 px-6  bg-accent-green hover:bg-light-green outline outline-1 outline-accent-green text-white hover:text-accent-green w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md rounded-md text-[15px] leading-[10px]">
-                        Sumar TortuTV a mi plan de internet
+                        Sumar beneficio a mi plan de internet
                     </button>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- section: TortuTV End-->
+    <!-- Section-TortuTV-End-->
 
     <!-- section: Server Apps -->
 
-    <section class="bg-white my-20 pt-20 " id="apps">
+    <section class="bg-white my-20 pt-20 pb-10 " id="apps">
         <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
             <div class="w-full">
                 <p class="text-negative text-[25px] text-center lg:text-start leading-[1.5] lg:leading-[50px] font-bold">
@@ -698,10 +599,10 @@
     </section>
 
     <!-- section: Server Apps End -->
-    
-    <!-- footer section -->
+
+    <!-- Footer-Section-Start -->
     <footer class="p-4 bg-sec-green md:p-8 lg:p-10 ">
-        
+    
         <!-- logo -->
         <a href="#" class="flex flex-col justify-center items-center text-2xl cursor-pointer mb-4">
             <img class="w-[95px] lg:w-[36px] lg:hidden block rounded-full" src="./src/img/logo/tortuinternet_logo.png" alt="TortuInternet Logo">
@@ -709,73 +610,93 @@
             <p class=" text-white text-lg font-lato font-light">Calidad asegurada, de punta a punta.</p>
         </a>
 
-        <div class="container px-6 pt-6 text-white mx-auto bg-opacity-40 p-8 rounded-xl">
-    <!-- Social media icons container -->
-        <div class="mb-6 flex justify-center space-x-2">
-            <!-- facebook -->
-            <a href="https://www.facebook.com/tortuinternet" target="_blank" class="hover:text-accent-green transition-colors">
-                <i class='bx bxl-facebook-circle text-5xl'></i>
-            </a>
-            <!-- instagram -->
-            <a href="https://www.instagram.com/tortuinternet/" target="_blank" class="hover:text-accent-green transition-colors">
-                <i class='bx bxl-instagram-alt text-5xl' ></i>
-            </a>
-            <!-- whatsapp -->
+        <!-- wrapper -->
+        <div class="bg-accent-green bg-opacity-15 rounded-xl overflow-hidden block md:flex md:flex-row-reverse gap-4 p-5 shadow-2xl mb-4">
 
-            <a href="https://api.whatsapp.com/send?phone=5491163987663&text=Hola,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20planes." class="hover:text-accent-green transition-colors">
-                <i class='bx bxl-whatsapp text-5xl' ></i>
-            </a>
-
-
-        </div>
-
-    <!-- Newsletter sign-up form -->
-        <div class=" mb-14"> 
-            <form action="https://formsubmit.co/tortuinternet.facturacion@gmail.com" method="POST">
-                <div class="flex flex-col lg:flex-row m-1">
-                    <div class=" text-center lg:text-end m-1 w-full lg:w-[50%] pe-4 self-center">
-                        <p>
-                            <strong>Suscribite a nuestro newsletter</strong>
-                        </p>
-                    </div>
-                
-            <!-- Newsletter sign-up input field -->
-            <div class=" w-full h-min my-auto justify-start flex flex-col lg:flex-row self-center" >
-                <input type="email" class="w-full mb-4 lg:mb-0 lg:w-[50%] h-8 rounded-md ps-2 me-6 justify-center" id="exampleFormControlInputEmail" placeholder="Ingrese su email aqui..." />
-                <button class=" bg-accent-green px-3 h-8 rounded-md font-bold font-lato text-white hover:text-accent-green hover:bg-light-green hover:outline hover:outline-1 " type="submit" value="email">
-                    Subscribete!
-                </button>
-            </div>
-        
+            <!-- #1 Box -->
+            <div class="px-6 pt-6 text-white mx-auto p-8 grid place flex-[2] md:flex-[2] lg:flex-[3]">
+                <!-- Social media icons container -->
+                <div class="mb-6 flex justify-center space-x-2">
+                <!-- facebook -->
+                <a href="https://www.facebook.com/tortuinternet" target="_blank" class="hover:text-accent-green transition-colors">
+                    <i class='bx bxl-facebook-circle text-5xl'></i>
+                </a>
+                <!-- instagram -->
+                <a href="https://www.instagram.com/tortuinternet/" target="_blank" class="hover:text-accent-green transition-colors">
+                    <i class='bx bxl-instagram-alt text-5xl' ></i>
+                </a>
+                <!-- whatsapp -->
+    
+                <a href="https://api.whatsapp.com/send?phone=5491163987663&text=Hola,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20planes." class="hover:text-accent-green transition-colors">
+                    <i class='bx bxl-whatsapp text-5xl' ></i>
+                </a>
+    
+    
                 </div>
-            </form>
+    
+                <!-- Newsletter sign-up form -->
+                <div class=" mb-14"> 
+                <form action="https://formsubmit.co/tortuinternet.facturacion@gmail.com" method="POST">
+                    <div class="flex flex-col lg:flex-row m-1">
+                        <div class=" text-center lg:text-end m-1 w-full lg:w-[50%] pe-4 self-center">
+                            <p>
+                                <strong>Suscribite a nuestro newsletter</strong>
+                            </p>
+                        </div>
+                    
+                <!-- Newsletter sign-up input field -->
+                <div class=" w-full h-min my-auto justify-start flex flex-col lg:flex-row self-center" >
+                    <input type="email" class="w-full mb-4 lg:mb-0 lg:w-[50%] h-8 rounded-md ps-2 me-6 justify-center" id="exampleFormControlInputEmail" placeholder="Ingrese su email aqui..." />
+                    <button class=" bg-accent-green px-3 h-8 rounded-md font-bold font-lato text-white hover:text-accent-green hover:bg-light-green hover:outline hover:outline-1 " type="submit" value="email">
+                        Subscribete!
+                    </button>
+                </div>
+            
+                    </div>
+                </form>
+                </div>
+            </div>
+
+            <!-- #2 Box - Additional - Links -->
+            <div class="p-5 w-full mx-auto flex-1 md:flex-[2] lg:flex-1">
+
+                <ul class="text-center md:text-start text-white font-semibold mb-10">
+                    <a class="opacity-45 p-2 sm:p-0 hover:opacity-100 hover:underline hover:transition-opacity hover:text-lg transition-colors duration-300 hover:text-accent-green" aria-label="Trabaja Con Nosotros" title="Trabaja Con Nosotros" href="https://forms.gle/bnAoxSVbg1dyfFvk8"><li>Trabaja con Nosotros</li></a>
+                    <a class="opacity-45 p-2 sm:p-0 hover:opacity-100 hover:underline hover:transition-opacity hover:text-lg transition-colors duration-300 hover:text-accent-green" aria-label="Internet Corporativo" title="Internet Corporativo" href="mailto:administracion@tortuinternet.com.ar"><li>Internet Corporativo</li></a>
+                    <a class="opacity-45 p-2 sm:p-0 hover:opacity-100 hover:underline hover:transition-opacity hover:text-lg transition-colors duration-300 hover:text-accent-green" aria-label="Atencion Al Cliente" title="Atencion Al Cliente" href="https://wa.link/dmgdyn"><li>Atención al cliente</li></a>
+                    <a class="opacity-45 p-2 sm:p-0 hover:opacity-100 hover:underline hover:transition-opacity hover:text-lg transition-colors duration-300 hover:text-accent-green" aria-label="Terminos y Condiciones" title="Terminos y Condiciones" href="./src/data/CONDICIONES Y POLÍTICAS PARA LA CONTRATACIÓN DEL SERVICIO (3).pdf" target="_blank"><li>Condiciones para la Contratación del Servicio</li></a>
+                </ul>
+
+                <dl class="text-center md:text-start text-sm text-white">
+                    <dt class="font-extrabold opacity-55">Zonas de Cobertura</dt>
+                        <dd class="opacity-45">Tortuguitas <span class="hidden sm:inline">, Buenos Aires</span></dd>
+                        <dd class="opacity-45">Grand Bourg <span class="hidden sm:inline">, Buenos Aires</span></dd>
+                        <dd class="opacity-45">Pablo Nogues <span class="hidden sm:inline">, Buenos Aires</span></dd>
+                        <dd class="opacity-45">Villa de Mayo <span class="hidden sm:inline">, Buenos Aires</span></dd>
+                        <dd class="opacity-45">Villa Rosa Pilar <span class="hidden sm:inline">, Buenos Aires</span></dd>
+                </dl>
+
+            </div>
+
         </div>
 
+        <!-- Copy -->
         <div class="mx-auto max-w-screen-xl text-center py-4 ">
             <span class="text-sm text-white sm:text-center"> All Rights Reserved - ©<a href="#" class=" font-bold font-redHat hover:underline"> Tortuinternet </a> - 2024</span>
         </div>
+
     </footer>
 
-    <!-- footer section end -->
+    <!-- Footer-Section-End -->
 
-    
-    <!-- ------------------------- scripts --------------------------------- -->
-
-    <!-- box-icons -->
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    
-    <!-- Swiper JS -->
+    <!-- SCRIPTS -->
+    <!-- SwiperJs-Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
     <script>
-
-        var swiper = new Swiper(".mobSwiper", {
+        var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
-            centeredSlides: true,
-            spaceBetween: 30,
             loop: true,
-            grabCursor: true,
+            spaceBetween: -5,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -784,25 +705,54 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-            });
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1300: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                }
+            },
+        });
+       // Second-Swiper-Function
+        var swiper = new Swiper(".mySwiperAlt", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1366: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
 
-        var swiper = new Swiper(".deskSwiper", {
-            slidesPerView: 4,
-            centeredSlides: false,
-            spaceBetween: -60,
-            loop: false,
-            grabCursor: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            });
-    
+                },
+            }
+        });
     </script>
-
 </body>
 </html>

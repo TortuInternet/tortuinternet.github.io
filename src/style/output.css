@@ -590,6 +590,26 @@ video {
   }
 }
 
+.aspect-h-1{
+  --tw-aspect-h: 1;
+}
+
+.aspect-w-1{
+  position: relative;
+  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  --tw-aspect-w: 1;
+}
+
+.aspect-w-1 > *{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .fixed{
   position: fixed;
 }
@@ -1090,10 +1110,6 @@ video {
   border-bottom-right-radius: 0.375rem;
 }
 
-.border-2{
-  border-width: 2px;
-}
-
 .bg-\[\#fff\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1591,7 +1607,7 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-:root{
+:root {
   scroll-behavior: smooth;
 }
 
@@ -1607,7 +1623,7 @@ video {
 
 /* whatsapp-floating-styles */
 
-.whatsapp{
+.whatsapp {
   position: fixed;
   width: 60px;
   height: 60px;
@@ -1659,26 +1675,26 @@ video {
   align-items: center;
 }
 
-.next{
+.next {
   color: #24ab15 !important;
-  opacity: .3 !important;
+  opacity: 0.3 !important;
 }
 
-.next:hover{
+.next:hover {
   opacity: 1 !important;
 }
 
-.prev{
+.prev {
   color: #24ab15 !important;
-  opacity: .3 !important;
+  opacity: 0.3 !important;
 }
 
-.prev:hover{
+.prev:hover {
   opacity: 1 !important;
 }
 
-.swiper-pagination-bullet{
-  background: #24AB15 !important;
+.swiper-pagination-bullet {
+  background: #24ab15 !important;
 }
 
 /* --------------------------------- Plans ------------------------------------------ */
@@ -1687,7 +1703,8 @@ video {
 
 .card {
   width: 300px;
-  height: 310px;
+  /* height: 310px; */
+  min-height: 310px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -1699,22 +1716,25 @@ video {
 }
 
 .card-title {
-  background-color: #08520F;
+  background-color: #08520f;
   color: #ffffff;
   text-align: center;
-  line-height: 0.9;
-  padding: 1rem 0;
+  /* line-height: 0.9; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.2rem 0;
   box-shadow: rgba(0, 0, 0, 0.057) 0px 20px 24px;
 }
 
 .card-line {
   display: flex;
   align-items: center;
-  gap: .2rem;
+  gap: 0.2rem;
   margin-inline: 12px;
-  line-height: 12px ;
+  line-height: 12px;
   text-transform: capitalize;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .card-button {
@@ -1725,18 +1745,18 @@ video {
   text-transform: uppercase;
   color: #fff;
   border: 2px solid transparent;
-  background: #08520F;
+  background: #08520f;
   border-radius: 3px;
   /* transition: all 0.75s ease-out ; */
 }
 
-.card-button:hover{
-  background: #E4F3CE;
+.card-button:hover {
+  background: #e4f3ce;
   outline: #24ab15 1px solid;
   color: #24ab15;
 }
 
-.card-button:active{
+.card-button:active {
   background: #24ab15;
   color: #fff;
 }
@@ -1745,29 +1765,30 @@ video {
   color: #24ab15;
 }
 
-.promo{
+.promo {
   position: relative;
   z-index: 10;
   overflow: visible;
 }
 
-.promo_fix{
+.promo_fix {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   background: #036994;
 }
 
-.promo::before{
+.promo::before {
   background: #24ab15;
   color: #fff;
-  content: '¡Plan más solicitado!';
+  content: "¡Plan más solicitado!";
   width: 100%;
-  padding: 5px 0;
+  padding: 2px 0 6px 0;
+  /* margin-bottom: 3px; */
   font-weight: 800;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   position: absolute;
-  top: -30px;
+  top: -28px;
   z-index: -10;
 }
 
@@ -1775,10 +1796,10 @@ video {
 
 /* Tortu Tv 1x3 Grid */
 
-.square{
+.square {
   /* box-shadow: rgba(5, 180, 95, 0.423) 0px 20px 24px; */
   /* box-shadow: rgba(5, 180, 95, 0.423) 8px 8px 15px; */
-  background: #08520F;
+  background: #08520f;
 }
 
 .left {
@@ -1799,12 +1820,41 @@ video {
 
 /* Footer-Instagram-Icon */
 
-.instagram{
-  width:100px;
-  height:100px;
+.instagram {
+  width: 100px;
+  height: 100px;
   background: #f09433;
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+@media (min-width: 768px){
+  .md\:aspect-h-3{
+    --tw-aspect-h: 3;
+  }
+
+  .md\:aspect-w-2{
+    position: relative;
+    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+    --tw-aspect-w: 2;
+  }
+
+  .md\:aspect-w-2 > *{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 @keyframes pulse{
